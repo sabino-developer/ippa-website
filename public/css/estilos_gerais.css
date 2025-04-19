@@ -79,10 +79,10 @@ header .btn-inscrever button:hover {
 header .btn-inscrever button#signin {
     padding: 8px 15px;
     color: #000;
-    background-color:#f05c06b7;
+    background: transparent;
+    border: 2px solid #f05c06b7;
     font-size: 1em;
     cursor: pointer;
-    border: 0px solid #000;
     border-radius: 10px;
 }
 
