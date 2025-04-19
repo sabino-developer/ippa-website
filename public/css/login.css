@@ -65,7 +65,7 @@ button {
     width: 100%;
     border: none;
     padding: 10px;
-    background-color: #77b7cd;
+    background-color: #295580;
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
@@ -74,7 +74,8 @@ button {
 }
 
 button:hover {
-    background-color: #295580;
+    background-color: green;
+    transform: scale(1.05);
 }
 
 .form-control .icon {
@@ -117,6 +118,7 @@ a {
     text-align: center;
     justify-content: center;
     padding-top: 10px;
+    color: #000;
 }
 
 a:hover {

@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(../img/slider_4.png);
+    background-image: url(../img/fundo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -135,4 +135,8 @@ small {
     right: -20px;
     top: 0;
     border-left: 20px solid #1976d2;
+}
+
+a {
+    top: 50px;
 }
