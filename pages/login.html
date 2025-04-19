@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/login.css">
+    <link rel="shortcut icon" href="../public/img/fav.ico" type="image/x-icon">
+    <title>Ippa Web Site | Login</title>
+</head>
+<body>
+        <div class="container">
+            <img src="../public/img/slider_4.png">
+            <form action="" id="mainForm" novalidate>
+                <h2>Login</h2>
+                <div class="form-control">
+                    <label for="name">Nome*</label>
+                    <input type="text" id="name" placeholder="Insere o seu nome" autocomplete="off" required>
+                </div>
+                <div class="form-control">
+                    <label for="Email">Email*</label>
+                    <input type="Email" id="Email" placeholder="Insere o seu Email" autocomplete="off">
+                </div>
+                <div class="form-control">
+                    <label for="senha">Senha*</label>
+                    <input type="password" id="senha" placeholder="Insere a sua senha" autocomplete="off">
+                </div>
+                <button type="submit">Entrar</button>  
+                <a href="cadastro.html">Não tens uma conta! Cadastre-se</a> 
+            </form> 
+        </div>
+
+        <div id="sucessoModal" class="modal">
+            <div class="modal-content">
+                <span class="fechar-button">&times;</span>
+                <h2>Sucesso!</h2>
+                <p>Os seus dados foram enviados com sucesso.</p>
+            </div>
+        </div>
+
+    <script src="/public/js/scripts.js"></script>
+</body>
+</html>

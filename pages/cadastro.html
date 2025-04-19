@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/cadastro.css">
+    <link rel="shortcut icon" href="../public/img/fav.ico" type="image/x-icon">
+    <title>Cadastrar-se | IPPA Web Site</title>
+</head>
+<body>
+
+    <div class="container">
+        <form action="processar.php" method="POST" id="form1">
+            <h3>Criar Conta</h3>
+            <input type="text" placeholder="Primeiro Nome" required>
+            <input type="text" placeholder="Último Nome" required>
+            <input type="date" placeholder="Data de Nascimento" required>
+
+            <div class="btn-box"><button type="button" id="next1">Próximo</button></div>
+        </form>
+        <form action="processar.php" method="POST" id="form2">
+            <h3>Dados Adicionais</h3>
+            <input type="password" placeholder="Senha" required>
+            <input type="password" placeholder="Confirme a Senha" required>
+            <input type="tel" placeholder="Telefone" required>
+
+            <div class="btn-box">
+                <button type="button" id="back1">Voltar</button>
+                <button type="button" id="next2">Próximo</button>
+            </div>
+        </form>
+        <form action="processar.php" method="POST" id="form3">
+            <h3>Dados Institucionais</h3>
+            <input type="text" placeholder="Cursos" required>
+            <select type="text" id="cursos" placeholder="Insere o seu Curso" autocomplete="off">
+                <option value="Informática"> Informática </option>
+                <option value="Gestão de Sistemas Informáticos (GSI)"> GSI </option>
+                <option value="Eletrónica"> Eletrónica </option>
+                <option value="Desenhador Projetista"> Desenhador Projetista</option>
+                <option value="Contabilidade"> Contabilidade </option>
+            </select>
+            </input>
+            <input type="text" placeholder="Turma" required>
+            <input type="tel" placeholder="" required>
+
+            <div class="btn-box">
+                <button type="button" id="back2">Voltar</button>
+                <button type="button" id="submit">Enviar</button>
+            </div>
+        </form>
+        <a href="login.html">Já tenho uma conta!</a>
+
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>Etapa 1</small></div>
+            <div class="step-col"><small>Etapa 2</small></div>
+            <div class="step-col"><small>Etapa 3</small></div>
+        </div>
+    </div>
+
+    <script src="../public/js/cadastrar.js"></script>
+</body>
+</html>

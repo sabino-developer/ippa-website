@@ -1,0 +1,292 @@
+/* Configurações Gerais do ippa website 
+@font-face {
+    font-family: ubuntu;
+    src: url(fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+    display: flex;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    width: 100%;
+    padding: 4px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo-ippa img {
+    width: 100%;
+    height: 60px;
+}
+
+header a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+header nav ul li:hover {
+    transform: scale(1.05);
+}
+
+header .btn-inscrever button {
+    padding: 8px 20px;
+    color: #eee;
+    background-color: #1565c8;
+    font-size: 1em;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+header .btn-inscrever button:hover {
+    background-color: #1566c8ea;
+}
+
+header .btn-inscrever button#signin {
+    padding: 8px 15px;
+    color: #000;
+    background-color:#f05c06b7;
+    font-size: 1em;
+    cursor: pointer;
+    border: 0px solid #000;
+    border-radius: 10px;
+}
+
+/* Estilo do Slider */
+.slider {
+    height: 50vh;
+    position: relative;
+}
+
+.slider .slider-container .slider-box {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: .7s;
+}
+
+.slider .slider-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .slider-box::after {
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.785), transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slider .slider-box .texto-slider {
+    position: absolute;
+    left: 10%;
+    top: 28%;
+    color: #fff;
+    z-index: 1;
+    width: 80%;
+    max-width: 600px;
+}
+
+.slider .slider-box .texto-slider h2 {
+    font-size: 3rem;
+}
+
+.slider .slider-box .texto-slider p {
+    line-height: 22px;
+}
+
+/* Animação do texto do Slider */
+
+@keyframes texto_animado {
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slider .slider-box.ativo h2, 
+.slider .slider-box.ativo p {
+    transform: translateX(60px);
+    opacity: 0;
+    animation: texto_animado .5s ease-in-out .7s forwards;
+}
+
+.slider .slider-box.ativo p {
+    animation-delay: 1s;
+}
+
+.slider-container .slider-box.ativo {
+    opacity: 1;
+    z-index: 11111;
+}
+
+/* Esttilo das setas do Slider*/
+.setas {
+    width: 100%;
+    height: 100%;
+    padding: 0 4%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 22222;
+}
+
+.setas button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: #c9c9c9;
+    border: 0px solid #eee;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 32px;
+    transition: .2s;
+}
+
+.setas button:hover {
+    background: transparent;
+    transform: scale(1.5);
+}
+
+/* Estilo botões de navegação do Slider */
+.btn-nav-box {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    z-index: 77777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-nav-box .btn-nav {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-nav-box .btn-nav:hover {
+    background-color: #eee;
+}
+
+.btn-nav-box .btn-nav.ativo {
+    background-color: #eee;
+}
+
+/* estilo do conteúdo bem-vindo */
+section.cont-bemvindo {
+    padding: 30px 0;
+    height: 38vh;
+    position: relative;
+}
+
+section.cont-bemvindo .bemvindo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+}
+
+section.cont-bemvindo .txt-bemvindo {
+    width: 600px;
+    line-height: 25px;
+}
+
+section.cont-bemvindo .txt-bemvindo h2 {
+    font-size: 28px;
+}
+
+section.cont-bemvindo .txt-bemvindo p {
+    font-size: 15px;
+    text-align: justify;
+    padding: 20px 0;
+}
+
+section.cont-bemvindo .txt-bemvindo a {
+    text-decoration: none;
+}
+
+section.cont-bemvindo .txt-bemvindo button {
+    padding: 8px 20px;
+    color: #fff;
+    background-color: #1565c8;
+    font-size: 1em;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+}
+
+.cont-bemvindo .imagem-animado {
+    border-radius: 25%;
+    padding: 28px;
+    inset: 4px;
+    overflow: hidden;
+}
+
+.cont-bemvindo .imagem-animado img {
+    position: relative;
+    width: 100%;
+    height: 125px;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: -25px;
+    }
+    100% {
+        top: 25px;
+    }
+}
+
+
+
+
+
