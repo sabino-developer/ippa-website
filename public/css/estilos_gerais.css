@@ -264,7 +264,6 @@ section.cont-bemvindo .txt-bemvindo button {
 }
 
 .cont-bemvindo .imagem-animado {
-    border-radius: 25%;
     padding: 28px;
     inset: 4px;
     overflow: hidden;
@@ -286,7 +285,50 @@ section.cont-bemvindo .txt-bemvindo button {
     }
 }
 
+@media screen and (max-width: 1020px) {
+    .menu-desktop, .btn-inscrever {
+        display: none;
+    }
 
+    .bemvindo-container {
+        flex-direction: column-reverse;
+    }
+
+    section.cont-bemvindo .txt-bemvindo {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        line-height: 25px;
+    }
+    
+    section.cont-bemvindo .bemvindo-container {
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .slider .slider-box .texto-slider {
+        top: 30%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .slider .slider-box .texto-slider h2 {
+        font-size: 2.8rem;
+        padding-bottom: 10px;
+        line-height: 38px;
+    }
+    
+    .slider .slider-box .texto-slider p {
+        line-height: 18px;
+    }
+
+    .setas {
+        padding: 0 2%;
+        left: -10px;
+    }
+}
 
 
 
